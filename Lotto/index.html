@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로또 6/45 번호 생성기</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>🍀 로또 6/45 번호 생성기</h1>
+            <p class="subtitle">행운의 번호를 생성해보세요!</p>
+        </header>
+
+        <main>
+            <div class="generator-section">
+                <button id="generateBtn" class="generate-btn">
+                    <span>🎲 번호 생성</span>
+                </button>
+
+                <div id="numbersDisplay" class="numbers-display">
+                    <p class="placeholder">위 버튼을 눌러 번호를 생성하세요</p>
+                </div>
+            </div>
+
+            <div class="history-section">
+                <div class="history-header">
+                    <h2>📜 최근 생성 번호</h2>
+                    <button id="clearAllBtn" class="clear-all-btn">🗑️ 전체 삭제</button>
+                </div>
+                <div id="historyList" class="history-list">
+                    <p class="empty-message">아직 생성된 번호가 없습니다</p>
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <p>🎯 행운을 빕니다!</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
